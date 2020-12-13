@@ -1,0 +1,99 @@
+.hero {
+  position: absolute;
+  top: 82px;
+  left: 0;
+  right: 0;
+  @include tablet {
+    padding: 0 3rem;
+  }
+  .container--desk {
+    display: flex;
+    margin: 0 0 0 auto;
+  }
+
+  &__text {
+    flex: 1;
+    opacity: 0;
+    position: relative;
+
+    padding: 17px 0px;
+    h1::before {
+      content: "";
+      position: absolute;
+      background: url("/images/plus.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 20px;
+      height: 20px;
+      left: 57%;
+      top: -70px;
+      @include tablet {
+        left: 42%;
+        top: -25px;
+      }
+      @include desktop {
+        left: 51%;
+        top: -26px;
+      }
+    }
+    h1 {
+      font-size: 29px;
+      color: $veryLightBlue;
+      font-weight: 700;
+      margin-bottom: 40px;
+      position: relative;
+      margin-top: 0px;
+      @include tablet {
+        font-size: 50px;
+      }
+      @include desktop {
+        font-size: 60px;
+        margin-top: 46px;
+        font-weight: 900;
+      }
+    }
+    p::after {
+      content: "";
+      position: absolute;
+      background: url("/images/plus.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 20px;
+      height: 20px;
+      bottom: -57px;
+      left: 66%;
+      @include tablet {
+        left: 38%;
+        bottom: -13px;
+      }
+      @include desktop {
+        left: 43%;
+        bottom: 22%;
+      }
+    }
+    p {
+      line-height: 1.8rem;
+      margin-bottom: 54px;
+      @include mobile {
+        width: 89%;
+      }
+      @include tablet {
+        width: 63%;
+      }
+    }
+  }
+  &__cta {
+    background: $pink;
+  }
+
+  &__image {
+    flex: 1;
+    opacity: 0;
+    position: relative;
+    height: 610px;
+    width: 100%;
+    background-image: url("/images/hero_right.png");
+    background-size: 93%;
+    background-repeat: no-repeat;
+  }
+}

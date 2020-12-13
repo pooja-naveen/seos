@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="font/flaticon.css" />
+    <link rel="stylesheet" href="./scss/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+    />
+
+    <title>SEOS</title>
+  </head>
+  <body>
+    <header class="header">
+      <div>
+        <nav id="navbar" class="flex flex-jc-sb flex-ai-c">
+          <a class="header__logo">
+            <img src="./images/logo.png" alt="seoslogo" />
+          </a>
+          <!--for desktop-->
+          <div class="header__links container--py for-desktop">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <a href="#" class="header__dropdownlink1">Blog </a>
+            <ul class="header__subdropdown1">
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Blog Details</a></li>
+            </ul>
+
+            <a href="#" class="header__dropdownlink2">Pages</a>
+
+            <ul class="header__subdropdown2">
+              <li><a href="#">Elements</a></li>
+            </ul>
+          </div>
+          <div class="header__button">
+            <a href="#" class="button header__cta btn-color for-desktop"
+              >Contact Us</a
+            >
+          </div>
+          <!-- for mobile and ipad-->
+          <a id="btnHamburger" class="header__hamburgerbtn for-mobile" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </nav>
+      </div>
+      <!-- display only when hamburgerbtn is clicked-->
+      <div class="header__menu for-mobile has-fade">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+
+        <li class="header__dropmenu1 flex flex-jc-sb flex-ai-c">
+          <a href="#">Blog </a>
+          <span class="header__add1 flaticon-add"></span>
+        </li>
+
+        <ul class="header__submenu1">
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Blog Details</a></li>
+        </ul>
+
+        <li class="header__dropmenu2 flex flex-jc-sb flex-ai-c">
+          <a href="#">Pages</a>
+          <span class="header__add2 flaticon-add"></span>
+        </li>
+
+        <ul class="header__submenu2">
+          <li><a href="#">Elements</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!--hero section-->
+    <section class="hero container container--desk flex">
+      <div class="hero__text">
+        <h1>
+          We Collect <br />
+          High Quality Leads
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
+          suspendisse ultrices gravi.
+        </p>
+
+        <a href="#" class="button hero__cta btn-color">Contact Us</a>
+      </div>
+      <div class="hero__image for-desktop"></div>
+    </section>
+    <!--Business section-->
+    <section class="your-business">
+      <div class="business container container--desk">
+        <h2>
+          What We Will Do For Your<br />
+          Business​
+        </h2>
+        <div class="business__cards">
+          <div class="business__card card1">
+            <div class="business__card__icon">
+              <span class="flaticon-analysis"></span>
+            </div>
+            <div class="business__card__title">Link Building</div>
+            <div class="business__card__body">
+              <p>
+                Hunky dory barney fanny around up the duff no biggie loo cup of
+                tea jolly good ruddy say arse!
+              </p>
+
+              <a href="#"
+                ><i class="fa fa-arrow-right" aria-hidden="true"></i>get
+                started</a
+              >
+            </div>
+          </div>
+
+          <div class="business__card card2">
+            <div class="business__card__icon">
+              <span class="flaticon-bullhorn"></span>
+            </div>
+            <div class="business__card__title">Content marketing</div>
+            <div class="business__card__body">
+              <p>
+                Hunky dory barney fanny around up the duff no biggie loo cup of
+                tea jolly good ruddy say arse!
+              </p>
+
+              <a href="#"
+                ><i class="fa fa-arrow-right" aria-hidden="true"></i>get
+                started</a
+              >
+            </div>
+          </div>
+
+          <div class="business__card card3">
+            <div class="business__card__icon">
+              <span class="flaticon-startup"></span>
+            </div>
+            <div class="business__card__title">On Page SEO</div>
+            <div class="business__card__body">
+              <p>
+                Hunky dory barney fanny around up the duff no biggie loo cup of
+                tea jolly good ruddy say arse!
+              </p>
+
+              <a href="#"
+                ><i class="fa fa-arrow-right" aria-hidden="true"></i>get
+                started</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--product section-->
+    <section class="digital-product">
+      <div class="product container container--desk">
+        <div class="product__image">
+          <img src="./images/digital-left.png" alt="we-create" />
+        </div>
+        <div class="product__text">
+          <h3>We Create a Steps to Build a Successful Digital Product</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+            ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
+            accumsan lacus vel facilisis orem ipsum dolor sit amet, consectetur
+            adipiscing.
+          </p>
+          <a href="#" class="button product__cta btn-color">Contact Us</a>
+        </div>
+      </div>
+    </section>
+    <!--Generating section-->
+    <section class="generating container container--desk">
+      <h2>Generating New Customers Via Online Mode​​</h2>
+      <div class="generating__cards">
+        <div class="generating__card flex">
+          <div class="generating__card__icon">
+            <span class="flaticon-analysis"></span>
+          </div>
+          <div class="generating__card__body">
+            <div class="generating__card__title">All Sizes Business</div>
+
+            <p>
+              Seddo eiusmod tempor incididunt labore lore magna aliqua uisipsum
+              suspendis incididun se ultrices gravida.
+            </p>
+          </div>
+        </div>
+
+        <div class="generating__card flex">
+          <div class="generating__card__icon">
+            <span class="flaticon-bullhorn"></span>
+          </div>
+          <div class="generating__card__body">
+            <div class="generating__card__title">Awesome Results</div>
+
+            <p>
+              Seddo eiusmod tempor incididunt labore lore magna aliqua uisipsum
+              suspendis incididun se ultrices gravida.
+            </p>
+          </div>
+        </div>
+
+        <div class="generating__card flex">
+          <div class="generating__card__icon">
+            <span class="flaticon-megaphone"></span>
+          </div>
+          <div class="generating__card__body">
+            <div class="generating__card__title">Keep you in the Loop</div>
+
+            <p>
+              Seddo eiusmod tempor incididunt labore lore magna aliqua uisipsum
+              suspendis incididun se ultrices gravida.
+            </p>
+          </div>
+        </div>
+
+        <div class="generating__card flex">
+          <div class="generating__card__icon">
+            <span class="flaticon-diagram"></span>
+          </div>
+          <div class="generating__card__body">
+            <div class="generating__card__title">Significant ROI</div>
+
+            <p>
+              Seddo eiusmod tempor incididunt labore lore magna aliqua uisipsum
+              suspendis incididun se ultrices gravida.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--price section-->
+    <section class="pricing-plan">
+      <div class="price container container--desk">
+        <h2>Choose Your Very Best Pricing Plan</h2>
+        <div class="price__cards">
+          <div class="price__card card1">
+            <div class="price__card__icon">
+              <span class="flaticon-diagram"></span>
+            </div>
+            <div class="price__card__body">
+              <h4>$ 05.00</h4>
+              <ul>
+                <li>Increase traffic 50%</li>
+                <li>Social Media Marketing</li>
+                <li>10 Free Optimization</li>
+                <li>24/7 support</li>
+              </ul>
+            </div>
+          </div>
+          <div class="price__card card2">
+            <div class="price__card__icon">
+              <span class="flaticon-best-seller"></span>
+            </div>
+            <div class="price__card__body">
+              <h4>$ 20.00</h4>
+              <ul>
+                <li>Increase traffic 50%</li>
+                <li>Social Media Marketing</li>
+                <li>10 Free Optimization</li>
+                <li>24/7 support</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="price__card card3">
+            <div class="price__card__icon">
+              <span class="flaticon-startup"></span>
+            </div>
+            <div class="price__card__body">
+              <h4>$ 30.00</h4>
+              <ul>
+                <li>Increase traffic 50%</li>
+                <li>Social Media Marketing</li>
+                <li>10 Free Optimization</li>
+                <li>24/7 support</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--visit section-->
+    <section class="visit">
+      <h2>Visit Some Of Our Awesome Stuffs</h2>
+      <div class="visit__cards">
+        <div class="visit__card">
+          <div class="visit__card__image">
+            <img src="./images/visit_1.jpg" alt="visit_1" />
+
+            <div class="visit__card__text">
+              <a href="#">citmv.com</a>
+              <p>Email Marketing</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="visit__card">
+          <div class="visit__card__image">
+            <img src="./images/visit_2.jpg" alt="visit_1" />
+
+            <div class="visit__card__text">
+              <a href="#">mvsp.net</a>
+              <p>Email Marketing</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="visit__card">
+          <div class="visit__card__image">
+            <img src="./images/visit_3.webp" alt="visit_1" />
+
+            <div class="visit__card__text">
+              <a href="#"> dmcal.co </a>
+              <p>Email Marketing</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="visit__card">
+          <div class="visit__card__image">
+            <img src="./images/visit_4.webp" alt="visit_1" />
+
+            <div class="visit__card__text">
+              <a href="#">dmco.net </a>
+              <p>Email Marketing</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- testimonial section-->
+    <section class="testimonial container container--desk">
+      <h2>What Client Say About Us</h2>
+      <div class="autoplay">
+        <div class="testimonial__slide">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+            ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
+            accumsan lacus vel facilisis.
+          </p>
+          <div class="flex flex-jc-c">
+            <div class="testimonial__image">
+              <img src="/images/testimonial-1.webp" alt=" testimonial" />
+            </div>
+            <ul>
+              <span>Oliva jems</span>
+              <li>UIX Designer</li>
+            </ul>
+          </div>
+        </div>
+        <div class="testimonial__slide">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+            ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
+            accumsan lacus vel facilisis.
+          </p>
+          <div class="flex flex-jc-c">
+            <div class="testimonial__image">
+              <img src="/images/testimonial-2.webp" alt=" testimonial" />
+            </div>
+            <ul>
+              <span> sonali</span>
+
+              <li>Product Designer</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Tips section-->
+    <section class="tips container container--desk">
+      <h2>Tips and Tricks From Our Exparts</h2>
+
+      <div class="tips__cards">
+        <div class="tips__card">
+          <div class="tips__card__image">
+            <img src="./images/tips_1.jpg" alt="tips_1" />
+          </div>
+          <div class="tips__card__body">
+            <h4>Twice profit than before you ever got</h4>
+            <span>Continue Reading</span>
+            <p>March 3, 2020</p>
+          </div>
+        </div>
+
+        <div class="tips__card">
+          <div class="tips__card__image">
+            <img src="./images/tips_2.jpg" alt="tips_2" />
+          </div>
+          <div class="tips__card__body">
+            <h4>Twice profit than before you ever got</h4>
+            <span>Continue Reading</span>
+            <p>March 3, 2020</p>
+          </div>
+        </div>
+        <div class="tips__card">
+          <div class="tips__card__image">
+            <img src="./images/tips_3.jpg" alt="tips_3" />
+          </div>
+          <div class="tips__card__body">
+            <h4>Twice profit than before you ever got</h4>
+            <span>Continue Reading</span>
+            <p>March 3, 2020</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Have section-->
+    <div class="container container--desk">
+      <section class="have">
+        <div class="have__text">
+          <h2>Have project in mind?</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut.
+          </p>
+        </div>
+        <div class="have__button">
+          <a
+            href="#"
+            class="button have__cta btn-color"
+            onclick="window.scrollTo(0,0)"
+            >Contact Us</a
+          >
+        </div>
+      </section>
+    </div>
+
+    <!--Footer section-->
+    <section class="footer">
+      <div class="container">
+        <div class="footer__links container--desk">
+          <div class="footer__link f1">
+            <a class="footer__logo">
+              <img src="./images/logo.png" alt="seoslogo" />
+            </a>
+            <ul>
+              <li class="footer__address">
+                221B Baker Street, P.O Box 353 Park Road, USA - 215431
+              </li>
+              <li class="footer__email">info@yourdomain.com</li>
+              <ul class="footer__social_icon flex">
+                <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                <li><i class="fa fa-globe" aria-hidden="true"></i></li>
+                <li><i class="fa fa-behance" aria-hidden="true"></i></li>
+              </ul>
+            </ul>
+          </div>
+
+          <div class="footer__link f2">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer__link f3">
+            <h3>Support</h3>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Sitemap</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Report a bugb</a></li>
+            </ul>
+          </div>
+          <div class="footer__link f4">
+            <h3>Core Features</h3>
+            <ul>
+              <li><a href="#">Email Marketing</a></li>
+              <li><a href="#">Offline SEO</a></li>
+              <li><a href="#">Social Media Marketing</a></li>
+              <li><a href="#">Lead Generation</a></li>
+              <li><a href="#">24/7 Support</a></li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <h4>Copyright ©2020 All rights reserved</h4>
+        </div>
+
+        <a href="#" class="up__button"
+          ><i class="fa fa-arrow-up" aria-hidden="true"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./scss/js/script.js"></script>
+    <script>
+           $(window).width(function(){
+            $(".hero__text").animate({ left: "2%", opacity: "1" }, 1500);
+      $(".hero__image").animate({ right: "2%", opacity: "1" }, 1500);
+           }
+    </script>
+    <script>
+      $(window).scroll(function () {
+        $("nav").toggleClass("scrolled", $(this).scrollTop() > 1080);
+        $(".up__button").css(
+          "display",
+          $(this).scrollTop() > 1080 ? "block" : "none"
+        );
+      });
+    </script>
+  </body>
+</html>

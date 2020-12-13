@@ -1,0 +1,79 @@
+.generating {
+  margin-bottom: 4.5rem;
+  @include desktop {
+    margin-bottom: 160px;
+ }
+  @include tablet {
+  padding: 0px 35px;
+  }
+  h2 {
+    font-size: 23px;
+    font-weight: 700;
+    margin-bottom: 66px;
+    color: $veryLightBlue;
+    text-align: center;
+    @include tablet {
+      font-size: 45px;
+    }
+    @include desktop {
+      font-size: 50px;
+      padding: 0px 14rem;
+    }
+  }
+  &__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 35px;
+    @include desktop {
+      gap: 25px;
+    }
+    @include tab-desk {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  &__card {
+    border: 1px solid #f2f2f2;
+    border-radius: 5px;
+    padding: 20px 0px 10px 0px;
+    @include desktop {
+      padding: 40px 29px 40px 40px;
+      max-width: 550px;
+    }
+  }
+  @include desktop {
+    &__card:hover {
+      box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
+      transition: all 250ms ease-in-out;
+    }
+  }
+
+  &__card__icon {
+    margin-left: -9px;
+    span::before {
+      font-size: 41px;
+      color: $pink;
+      @include desktop {
+        font-size: 60px;
+      }
+    }
+  }
+  &__card__title {
+    color: #2b4b80;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 29px;
+  }
+  &__card__body {
+    margin-left: 28px;
+
+    p {
+      font-size: 15px;
+      font-weight: 400;
+      margin-bottom: 15px;
+      line-height: 30px;
+      @include tablet {
+        width: 86%;
+      }
+    }
+  }
+}

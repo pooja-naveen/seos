@@ -1,0 +1,96 @@
+.testimonial {
+  text-align: center;
+  margin-bottom: 55px;
+  @include tablet {
+    margin-bottom: 60px;
+  }
+  h2 {
+    color: $veryLightBlue;
+    font-weight: 700;
+    margin-bottom: 46px;
+    font-size: 23px;
+    text-align: center;
+    margin: 0 auto;
+
+    @include tablet {
+      font-size: 45px;
+      width: 58%;
+    }
+    @include desktop {
+      font-size: 45px;
+      padding: 0rem 22.5rem 30px 22.5rem;
+    }
+  }
+
+  &__slide {
+    p {
+      margin-bottom: 30px;
+      font-weight: 300;
+      font-style: italic;
+      text-align: center;
+      @include tablet {
+        line-height: 1.5;
+        font-size: 18px;
+      }
+      @include desktop {
+        font-size: 20px;
+      }
+    }
+  }
+  &__image {
+    padding-top: 12px;
+    img {
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+  ul {
+    padding-left: 10px;
+    span {
+      font-size: 25px;
+      color: $darkViolet;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+    li {
+      color: $grey;
+      padding-right: 0px;
+      font-size: 15px;
+      font-weight: 600;
+    }
+  }
+}
+@include tab-desk {
+  .autoplay {
+    width: 73%;
+    margin: 0 auto;
+  }
+}
+@include desktop {
+  .autoplay::before {
+    content: "“";
+    font-size: 14rem;
+    top: 37px;
+    position: absolute;
+    top: -44%;
+    left: -14%;
+    color: #e3def0;
+  }
+
+  .autoplay::after {
+    content: "„";
+    font-size: 14rem;
+    top: 37px;
+    position: absolute;
+    top: -8%;
+    right: -14%;
+    color: #e3def0;
+  }
+  .testimonial:hover .autoplay::before,
+  .testimonial:hover .autoplay::after {
+    transition: all 300ms ease-in-out;
+    color: #c2aff2;
+  }
+}

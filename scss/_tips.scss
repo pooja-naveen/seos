@@ -1,0 +1,99 @@
+.tips {
+  margin-bottom: 66px;
+  @include tablet {
+    margin-bottom: 95px;}
+
+  @include desktop {
+    margin-bottom: 180px;
+  }
+
+  h2 {
+    font-size: 23px;
+    color: $veryLightBlue;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 48px;
+    @include tablet {
+      font-size: 45px;
+      width: 58%;
+    }
+    @include desktop {
+      margin-bottom: 100px;
+      font-size: 50px;
+      font-weight: 700;
+      width: 50%;
+      
+    }
+    
+  }
+  &__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 35px;
+    justify-items: center;
+    justify-content: center;
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include desktop {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @include desktop {
+    &__card:hover img {
+      transform: scale(1.08);
+    }
+  }
+
+  &__card__image {
+    border-radius: 5px;
+    overflow: hidden;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      transition: all 300ms ease-in-out;
+    }
+  }
+  &__card__body {
+    h4 {
+      color: $veryLightBlue;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1.4;
+      margin-bottom: 26px;
+      padding-right: 27px;
+    }
+    @include desktop {
+      h4:hover {
+        color: $pink;
+        transition: all 300ms ease-in-out;
+      }
+    }
+
+    span {
+      position: relative;
+      display: block;
+      font-size: 16px;
+      top: 5px;
+      color: $Blue;
+      padding-left: 48px;
+      margin-bottom: 26px;
+    }
+    span::before {
+      content: "";
+      width: 30px;
+      height: 2.5px;
+      background: $violet;
+      position: absolute;
+      top: 11px;
+      left: 0px;
+    }
+
+    p {
+      color: $pink;
+    }
+  }
+}

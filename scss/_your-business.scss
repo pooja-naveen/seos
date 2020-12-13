@@ -1,0 +1,135 @@
+.business {
+  margin-top: 80px;
+  padding-top: 80px;
+  margin-bottom: 75px;
+  @include desktop{
+    padding-top: 240px;
+  }
+
+  h2 {
+    text-align: center;
+    color: $veryLightBlue;
+    font-weight: 700;
+    margin-bottom: 66px;
+    font-size: 23px;
+    @include tablet{
+      padding: 0px 24px;
+    }
+    @include tab-desk {
+      font-size: 45px;
+    }
+  }
+
+  .business__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-items: center;
+    justify-content: center;
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include desktop {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  &__card {
+    max-height: 400px;
+    text-align: center;
+    padding: 35px;
+    @include tablet {
+      max-width: 330px;
+    }
+  }
+  .card1:hover,.card3:hover{
+    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
+    transition: all 150ms ease-in-out;
+    a {
+      color: $violet;
+    }
+    i {
+      background-color: $violet;
+    }
+  }
+  .card2 {
+    overflow: hidden;
+    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
+    transition: all 150ms ease-in-out;
+    a {
+      color: $violet;
+    }
+    i {
+      background-color: $violet;
+    }
+  }
+
+  &__card__icon {
+    margin-bottom: 20px;
+    span::before {
+      display: inline;
+      color: $pink;
+      font-size: 63px;
+    }
+  }
+  &__card__title {
+    font-size: 24px;
+    margin-bottom: 23px;
+    color: $veryLightBlue;
+    font-weight: 600;
+  }
+  &__card__body {
+    margin-bottom: 40px;
+    p {
+      line-height: 30px;
+      margin-bottom: 40px;
+    }
+
+    i {
+      width: 25px;
+      height: 25px;
+      font-size: 14px;
+      border-radius: 50%;
+      color: white;
+      background-color: #c5ccd8;
+      padding: 5px;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+
+    a {
+      text-transform: uppercase;
+      color: #c5ccd8;
+      font-size: 13px;
+    }
+  }
+}
+@include desktop{
+.your-business{
+  position: relative;
+  padding-bottom: 13rem;
+}
+.your-business::before{
+  background-image: url("/images/business-left-bg.png");
+  content: "";
+  position: absolute;
+  z-index: -1;
+  min-height: 467px;
+  min-width: 249px;
+  background-repeat: no-repeat;
+  left: 0;
+  top: 0;
+}
+.your-business::after{
+  background-image: url("/images/business-right-bg.png");
+  content: "";
+  position: absolute;
+  z-index: -1;
+  min-height: 467px;
+  min-width: 352px;
+  background-repeat: no-repeat;
+  right: 0;
+top: 32%;
+}
+}

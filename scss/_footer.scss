@@ -1,0 +1,120 @@
+.footer {
+  background-image: url("/images/footer_bg.png");
+  width: 100%;
+  padding-top: 70px;
+  @include tablet {
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+  }
+
+  @include desktop {
+    padding-top: 150px;
+    padding-bottom: 2rem;
+  }
+
+  &__links {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    @include tablet {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @include desktop {
+      grid-template-columns: repeat(4, 1fr);
+      margin-bottom: 4rem;
+    }
+  }
+  &__logo {
+    img {
+      margin-bottom: 20px;
+    }
+  }
+  &__link {
+    ul {
+      line-height: 1.8;
+      padding-left: 0px;
+    }
+    h3 {
+      color: $Blue;
+      font-size: 20px;
+      margin-bottom: 38px;
+      font-weight: 600;
+      margin-top: 6px;
+    }
+    a {
+      font-size: 17px;
+    }
+  }
+  &__address {
+    width: 71%;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  &__email {
+    font-weight: 400;
+    margin-bottom: 50px;
+  }
+
+  &__social_icon {
+    li {
+      font-size: 14px;
+      margin-right: 11px;
+      padding: 4px 12px;
+      color: #949eb2;
+      border: 1px solid #fafafa;
+      background-color: #fafafa;
+    }
+    @include desktop {
+      li:hover {
+        color: white;
+        background-color: $pink;
+        transition: all 300ms ease-in-out;
+      }
+    }
+  }
+  h4 {
+    color: #949eb2;
+    line-height: 2;
+    margin-bottom: 12px;
+    font-weight: 400;
+    text-align: center;
+    padding: 0px 48px;
+  }
+}
+.f2,
+.f3,
+.f4 {
+  li {
+    padding-bottom: 15px;
+  }
+  a {
+    color: $grey;
+  }
+  @include desktop {
+    a:hover {
+      color: $pink;
+      padding-left: 5px;
+      transition: all 300ms ease-in-out;
+    }
+  }
+}
+.up__button {
+  position: fixed;
+  background: $pink;
+  height: 50px;
+  width: 50px;
+  right: 5%;
+  bottom: 18px;
+  color: $white;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 48px;
+  border: 2px solid $pink;
+  @include tablet {
+    right: 4%;
+  }
+  @include desktop {
+    right: 4%;
+  }
+}

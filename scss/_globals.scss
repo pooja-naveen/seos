@@ -1,0 +1,113 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+a:hover {
+  cursor: pointer;
+}
+body {
+  max-width: 85.375em;
+  margin: 0 auto;
+  padding: 0;
+  background-color: white;
+  font-family: "Public Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.3;
+  color: $grey;
+}
+.container {
+  max-width: 75rem;
+  margin: 0 auto;
+  &--pall {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin: 0 auto;
+  }
+  &--desk{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+  }
+  &--px {
+    padding-left:3rem;
+    padding-right:3rem;
+    margin: 0 auto;
+  }
+  &--py {
+    padding-top: 2.4375rem;
+    padding-bottom: 2.4375rem;
+    margin: 0 auto;
+  }
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: $lightblue;
+}
+//flexbox
+.flex {
+  display: flex;
+  &-jc-sb {
+    justify-content: space-between;
+  }
+  &-jc-c {
+    justify-content: center;
+  }
+  &-ai-c {
+    align-items: center;
+  }
+}
+//button
+.button {
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 17px 42px;
+  min-width: 200px;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 400;
+  transition: background-color 0.4s linear;
+  position: relative;
+}
+.button::before {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: transform 0.5s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  transform: scaleX(0);
+  left: 0px;
+  top: 0px;
+  border-radius: 5px;
+  background-color: $darkPink;
+}
+.button:hover::before {
+  transform: scaleX(1);
+}
+//visibility
+.for-desktop {
+  @include small {
+    display: none;
+  }
+}
+
+
+.for-mobile{
+  @include desktop  {
+    display: none;
+  }
+}
