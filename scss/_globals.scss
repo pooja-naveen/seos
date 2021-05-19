@@ -1,6 +1,7 @@
 html {
   font-size: 100%;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 *,
 *::before,
@@ -30,14 +31,14 @@ body {
     padding-bottom: 2rem;
     margin: 0 auto;
   }
-  &--desk{
+  &--desk {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
   }
   &--px {
-    padding-left:3rem;
-    padding-right:3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
     margin: 0 auto;
   }
   &--py {
@@ -105,9 +106,8 @@ a {
   }
 }
 
-
-.for-mobile{
-  @include desktop  {
+.for-mobile {
+  @include desktop {
     display: none;
   }
 }

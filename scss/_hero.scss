@@ -20,7 +20,7 @@
     h1::before {
       content: "";
       position: absolute;
-      background: url("/images/plus.png");
+      background: url("../images/plus.png");
       background-size: cover;
       background-repeat: no-repeat;
       width: 20px;
@@ -55,7 +55,7 @@
     p::after {
       content: "";
       position: absolute;
-      background: url("/images/plus.png");
+      background: url("../images/plus.png");
       background-size: cover;
       background-repeat: no-repeat;
       width: 20px;
@@ -86,14 +86,15 @@
     background: $pink;
   }
 
-  &__image {
+  &__image  {
     flex: 1;
     opacity: 0;
     position: relative;
     height: 610px;
     width: 100%;
-    background-image: url("/images/hero_right.png");
-    background-size: 93%;
-    background-repeat: no-repeat;
+  }
+  img{
+    width: 80%;
+    height: 500px;
   }
 }

@@ -1,5 +1,5 @@
 .header {
-  background: url("/images/hero-bg.png");
+  background: url("../images/hero-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -15,8 +15,11 @@
       position: fixed;
       background-color: #fff;
       z-index: 3;
+      @include desktop {
+       padding-right: 12rem;
+      }
     }
-    @include xlarge{
+    @include xlarge {
       margin: 0 auto;
     }
     @include tablet {

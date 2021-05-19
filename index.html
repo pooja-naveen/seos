@@ -34,8 +34,8 @@
   </head>
   <body>
     <header class="header">
-      <div>
-        <nav id="navbar" class="flex flex-jc-sb flex-ai-c">
+      <div class="container--desk">
+        <nav id="navbar" class=" flex flex-jc-sb flex-ai-c">
           <a class="header__logo">
             <img src="./images/logo.png" alt="seoslogo" />
           </a>
@@ -113,7 +113,9 @@
 
         <a href="#" class="button hero__cta btn-color">Contact Us</a>
       </div>
-      <div class="hero__image for-desktop"></div>
+      <div class="hero__image for-desktop">
+        <img src="./images/heroright.png" alt=""/>
+      </div>
     </section>
     <!--Business section-->
     <section class="your-business">
@@ -373,7 +375,7 @@
           </p>
           <div class="flex flex-jc-c">
             <div class="testimonial__image">
-              <img src="/images/testimonial-1.webp" alt=" testimonial" />
+              <img src="./images/testimonial1.webp" alt=" testimonial" />
             </div>
             <ul>
               <span>Oliva jems</span>
@@ -390,7 +392,7 @@
           </p>
           <div class="flex flex-jc-c">
             <div class="testimonial__image">
-              <img src="/images/testimonial-2.webp" alt=" testimonial" />
+              <img src="./images/testimonial2.webp" alt=" testimonial" />
             </div>
             <ul>
               <span> sonali</span>
@@ -538,10 +540,10 @@
 
     <script src="./scss/js/script.js"></script>
     <script>
-           $(window).width(function(){
-            $(".hero__text").animate({ left: "2%", opacity: "1" }, 1500);
-      $(".hero__image").animate({ right: "2%", opacity: "1" }, 1500);
-           }
+      $(window).width(function () {
+        $(".hero__text").animate({ left: "2%", opacity: "1" }, 1500);
+        $(".hero__image").animate({ right: "2%", opacity: "1" }, 1500);
+      });
     </script>
     <script>
       $(window).scroll(function () {

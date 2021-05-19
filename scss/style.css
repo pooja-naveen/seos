@@ -3,6 +3,7 @@ html {
   font-size: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 *,
@@ -145,7 +146,7 @@ a {
 }
 
 .header {
-  background: url("/images/hero-bg.png");
+  background: url("../images/hero-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -167,6 +168,12 @@ a {
   position: fixed;
   background-color: #fff;
   z-index: 3;
+}
+
+@media (min-width: 992px) {
+  .header nav.scrolled {
+    padding-right: 12rem;
+  }
 }
 
 @media (min-width: 1200px) and (max-width: 1400px) {
@@ -352,7 +359,7 @@ a {
 .hero__text h1::before {
   content: "";
   position: absolute;
-  background: url("/images/plus.png");
+  background: url("../images/plus.png");
   background-size: cover;
   background-repeat: no-repeat;
   width: 20px;
@@ -401,7 +408,7 @@ a {
 .hero__text p::after {
   content: "";
   position: absolute;
-  background: url("/images/plus.png");
+  background: url("../images/plus.png");
   background-size: cover;
   background-repeat: no-repeat;
   width: 20px;
@@ -453,9 +460,11 @@ a {
   position: relative;
   height: 610px;
   width: 100%;
-  background-image: url("/images/hero_right.png");
-  background-size: 93%;
-  background-repeat: no-repeat;
+}
+
+.hero img {
+  width: 80%;
+  height: 500px;
 }
 
 .business {
